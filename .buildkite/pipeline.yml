@@ -1,0 +1,9 @@
+steps:
+  - label: ":docker: Build"
+    command: sh ./scripts/build.ps1
+  - wait
+  - label: ":docker: Test"
+    command: sh ./scripts/test.ps1
+  - wait
+  - label: ":docker: Deploy"
+    command: sh ./scripts/deploy.ps1
