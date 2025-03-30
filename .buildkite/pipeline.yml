@@ -1,9 +1,9 @@
 steps:
   - label: ":docker: Build"
-    command: .\scripts\build.ps1
+    command: Start-Process .\scripts\build.ps1
   - wait
   - label: ":docker: Test"
-    command: .\scripts\test.ps1
+    command: Start-Process .\scripts\test.ps1
   - wait
   - label: ":docker: Deploy"
-    command: .\scripts\deploy.ps1
+    command: Start-Process .\scripts\deploy.ps1
