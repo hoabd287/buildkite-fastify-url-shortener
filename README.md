@@ -46,3 +46,4 @@ Ethernet adapter vEthernet (WSL):
 ```
 - Also you should use hostname for the talk between containers.
 - set github fine-grained token permission to allow access `content`
+- add buildkite's webhook to github
