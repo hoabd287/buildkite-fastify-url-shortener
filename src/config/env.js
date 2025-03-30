@@ -29,7 +29,7 @@ const schema = {
     },
     POSTGRES_HOST: {
       type: 'string',
-      default: 'localhost',
+      default: 'url-shortener-db',
     },
     POSTGRES_DB: {
       type: 'string',

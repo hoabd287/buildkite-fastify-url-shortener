@@ -27,3 +27,21 @@ Find the set up instructions in
   will be displayed on the page.
 - Click the **Visit** button to open the shortened URL in a new tab. It should
   redirect you to the original URL.
+
+
+## Docker on Windows
+Docker desktop is running under WSL system, so all the container will use WSL's IP to talk to local machine.
+To look up for WSL's IP:
+```
+  ╱  ╱  ~ ​ ipconfig
+
+Windows IP Configuration
+Ethernet adapter vEthernet (WSL):
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::7827:62c2:e593:e8b1%47
+   IPv4 Address. . . . . . . . . . . : 172.29.128.1
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . :
+```
+- Also you should use hostname for the talk between containers.
