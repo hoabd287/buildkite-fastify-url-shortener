@@ -1,9 +1,9 @@
 steps:
   - label: ":docker: Build"
-    command: Start-Process .\scripts\build.ps1
+    command: .\scripts\build.bat
   - wait
   - label: ":docker: Test"
-    command: Start-Process .\scripts\test.ps1
+    command: .\scripts\test.bat
   - wait
   - label: ":docker: Deploy"
-    command: Start-Process .\scripts\deploy.ps1
+    command: .\scripts\deploy.bat
